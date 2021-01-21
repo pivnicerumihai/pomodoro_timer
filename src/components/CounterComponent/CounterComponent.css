@@ -1,0 +1,47 @@
+.counter {
+  position: absolute;
+  width: 175px;
+  height: 66px;
+  top: 248px;
+  border: 1px solid #bdbdbd;
+  box-sizing: border-box;
+  border-radius: 16px;
+}
+
+.session_length {
+  left: 680px;
+}
+
+.break_length {
+  left: 1009px;
+}
+
+.plus {
+  text-align: center;
+  position: absolute;
+  width: 19px;
+  height: 50px;
+  top: 0px;
+  padding-top: 16px;
+  padding-left: 10px;
+  right: 15px;
+  border-left: 1px solid #bdbdbd;
+  color: #11bcc7;
+}
+
+.minus {
+  text-align: center;
+  border-right: 1px solid #bdbdbd;
+  position: absolute;
+  width: 25px;
+  height: 50px;
+  padding-right: 10px;
+  left: 5px;
+  top: 0px;
+  padding-top: 16px;
+  color: #11bcc7;
+}
+
+input {
+  text-align: center;
+}

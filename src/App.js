@@ -1,25 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import ThemeContext from "./context/themeContext";
+
+import "./App.css";
+import NavbarComponent from "./components/Navbar/NavbarComponent";
+import TimerContainer from "./containers/TimerContainer/TimerContainer";
+import AboutContainer from "./containers/AboutContainer/AboutContainer";
+import SwitchComponent from "./components/SwitchComponent/SwitchComponent";
+
+class App extends Component {
+  state = {
+    theme: "light",
+    main_page: true,
+  };
+
+  showTimerPage = () => {
+    this.setState({ main_page: true });
+  };
+
+  showAboutPage = () => {
+    this.setState({ main_page: false });
+  };
+
+  toggleTheme = () => {
+    if (this.state.theme === "light") {
+      this.setState({ theme: "dark" });
+    } else {
+      this.setState({ theme: "light" });
+    }
+  };
+
+  render() {
+    return (
+      <div className="container">
+        <ThemeContext.Provider value={this.state.theme}>
+          <NavbarComponent
+            showTimer={this.showTimerPage}
+            showAbout={this.showAboutPage}
+          />
+          <SwitchComponent toggleTheme={this.toggleTheme} />
+          {this.state.main_page ? <TimerContainer /> : <AboutContainer />}
+        </ThemeContext.Provider>
+      </div>
+    );
+  }
 }
 
 export default App;

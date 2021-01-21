@@ -1,0 +1,18 @@
+.navbar {
+  width: 1440px;
+  box-shadow: 0px 4px 6px rgba(31, 29, 43, 0.05);
+  height: 96px;
+}
+
+.navbar.light {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.navbar.dark {
+  background-color: #1f1d2b;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 769px) {
+}

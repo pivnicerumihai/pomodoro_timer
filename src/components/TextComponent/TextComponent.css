@@ -1,8 +1,4 @@
 .navbar_title {
-  position: absolute;
-  width: 169px;
-  height: 32px;
-  left: 100px;
   text-transform: capitalize;
   font-style: normal;
   font-weight: 500;
@@ -12,7 +8,7 @@
 }
 
 .session {
-  position: absolute;
+  /* position: absolute; */
   width: 156px;
   height: 50px;
   left: 860px;
@@ -28,7 +24,7 @@
 
 .left_switch {
   z-index: 2;
-  position: absolute;
+  /* position: absolute; */
   width: 59px;
   height: 34px;
   top: 140px;
@@ -42,7 +38,7 @@
 
 .right_switch {
   z-index: 2;
-  position: absolute;
+  /* position: absolute; */
   width: 57px;
   height: 34px;
   left: 1127px;
@@ -56,11 +52,8 @@
 
 .about_text {
   z-index: 2;
-  position: absolute;
-  width: 220px;
+  text-align: center;
   height: 50px;
-  left: 511px;
-  top: 98px;
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
@@ -90,7 +83,7 @@
   letter-spacing: 0.01em;
 }
 .description_details {
-  position: absolute;
+  /* position: absolute; */
   font-size: 20px;
   line-height: 22px;
   letter-spacing: 0.01em;
@@ -101,7 +94,7 @@
 .git_text,
 .description_text,
 .stack_text {
-  position: absolute;
+  /* position: absolute; */
   width: 176px;
   height: 16px;
   left: 94px;
@@ -110,7 +103,7 @@
 
 .session_text,
 .break_text {
-  position: absolute;
+  /* position: absolute; */
   bottom: 65px;
   left: 20px;
   font-weight: 500;
@@ -120,15 +113,11 @@
 }
 
 .timer_clock {
-  position: absolute;
   width: 293px;
   height: 98px;
-  left: 123px;
-  top: 137px;
   font-weight: 500;
   font-size: 88px;
   line-height: 98px;
-  letter-spacing: 0.01em;
 }
 
 .timer_clock.light {
@@ -136,7 +125,7 @@
 }
 
 .counter_timer {
-  position: absolute;
+  /* position: absolute; */
   top: -10px;
   left: 47px;
   font-style: normal;
@@ -152,7 +141,7 @@
 }
 @media screen and (max-width: 769px) {
   .navbar_title {
-    position: absolute;
+    /* position: absolute; */
     width: 106px;
     height: 16px;
     left: 20px;
@@ -163,7 +152,7 @@
   }
 
   .session {
-    position: absolute;
+    /* position: absolute; */
     width: 94px;
     height: 26px;
     left: 141px;
@@ -175,7 +164,7 @@
 
   .left_switch {
     z-index: 2;
-    position: absolute;
+    /* position: absolute; */
     width: 30px;
     height: 22px;
     top: 140px;
@@ -186,7 +175,7 @@
 
   .right_switch {
     z-index: 2;
-    position: absolute;
+    /* position: absolute; */
     width: 29px;
     height: 22px;
     left: 706px;
@@ -198,7 +187,7 @@
 
   .about_text {
     z-index: 2;
-    position: absolute;
+    /* position: absolute; */
     width: 220px;
     height: 50px;
     left: 511px;
@@ -232,7 +221,7 @@
     letter-spacing: 0.01em;
   }
   .description_details {
-    position: absolute;
+    /* position: absolute; */
     font-size: 20px;
     line-height: 22px;
     letter-spacing: 0.01em;
@@ -243,7 +232,7 @@
   .git_text,
   .description_text,
   .stack_text {
-    position: absolute;
+    /* position: absolute; */
     width: 176px;
     height: 16px;
     left: 94px;
@@ -252,7 +241,7 @@
 
   .session_text,
   .break_text {
-    position: absolute;
+    /* position: absolute; */
     bottom: 65px;
     left: 20px;
     font-weight: 500;
@@ -262,7 +251,7 @@
   }
 
   .timer_clock {
-    position: absolute;
+    /* position: absolute; */
     width: 293px;
     height: 98px;
     left: 123px;
@@ -278,7 +267,7 @@
   }
 
   .counter_timer {
-    position: absolute;
+    /* position: absolute; */
     top: -10px;
     left: 47px;
     font-style: normal;

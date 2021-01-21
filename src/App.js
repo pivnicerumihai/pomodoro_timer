@@ -38,8 +38,8 @@ class App extends Component {
             showTimer={this.showTimerPage}
             showAbout={this.showAboutPage}
           />
-          <SwitchComponent toggleTheme={this.toggleTheme} />
-          {this.state.main_page ? <TimerContainer /> : <AboutContainer />}
+          {/* <SwitchComponent toggleTheme={this.toggleTheme} /> */}
+          {this.state.main_page ? <TimerContainer toggleTheme={this.toggleTheme} /> : <AboutContainer />}
         </ThemeContext.Provider>
       </div>
     );

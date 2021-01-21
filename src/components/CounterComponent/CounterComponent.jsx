@@ -1,7 +1,5 @@
 import React from "react";
 
-import TextComponent from "../TextComponent/TextComponent";
-
 import useTimer from "../../hooks/useTimer";
 
 import "./CounterComponent.css";
@@ -18,14 +16,14 @@ function CounterComponent({
 
   return (
     <div className={"counter " + counter_name}>
-      <TextComponent className={counter_text}>{counter}</TextComponent>
-      <span className="minus" onClick={descreaseTime}>
-        -
-      </span>
-      <TextComponent className={"counter_timer"}>{time}</TextComponent>
-      <span className="plus" onClick={increaseTime}>
-        +
-      </span>
+      <p className={counter_text}>{counter}</p>
+      <div className="counter_settings">
+        <span className="minus" onClick={descreaseTime}>-</span>
+        <p className={"counter_timer"}>{time}</p>
+        <span className="plus" onClick={increaseTime}>
+          +
+        </span>
+      </div>
     </div>
   );
 }

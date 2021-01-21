@@ -1,12 +1,12 @@
 .timer_container {
-  position: absolute;
-  width: 1240px;
+  width: 90%;
+  margin: 20px auto;
   height: 700px;
-  left: 100px;
-  top: 131px;
-  box-sizing: border-box;
   box-shadow: 0px 10px 34px rgba(50, 70, 91, 0.15);
   border-radius: 4px;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 .timer_container.light {
   background-color: #ffffff;
@@ -16,4 +16,48 @@
 .timer_container.dark {
   background-color: #1f1d2b;
   color: #ffffff;
+}
+
+.timer_settings {
+  width: 50%;
+}
+
+.timer_headline {
+  text-transform: capitalize;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  text-align: center;
+}
+
+.timer_headline--mobile {
+  display: none;
+}
+
+.counters {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 769px) {
+  .timer {
+    margin-top: 50px;
+  }
+
+  .timer_container {
+    display: block;
+    padding: 50px 0 50px 0;
+    height: auto;
+  }
+
+  .timer_headline {
+    display: none;
+  }
+  
+  .timer_headline--mobile {
+    display: block;
+    margin-bottom: 50px;
+    text-align: center;
+  }
 }

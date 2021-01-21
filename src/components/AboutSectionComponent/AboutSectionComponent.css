@@ -2,52 +2,22 @@ p {
   text-align: center;
 }
 
-.author.light,
-.git.light,
-.description.light,
-.stack.light {
+.section{
+  margin:15px;
+  width:40%;
+}
+
+.section.light{
+  
   border: 1px solid #bdbdbd;
   box-sizing: border-box;
   border-radius: 8px;
 }
-.author.dark,
-.git.dark,
-.description.dark,
-.stack.dark {
+.section.dark{
+  
   border: 1px solid #bdbdbd;
   box-sizing: border-box;
   border-radius: 8px;
-}
-.author {
-  position: absolute;
-  width: 326px;
-  height: 156px;
-  left: 278px;
-  top: 188px;
-}
-
-.git {
-  position: absolute;
-  width: 326px;
-  height: 156px;
-  left: 634px;
-  top: 188px;
-}
-
-.description {
-  position: absolute;
-  width: 326px;
-  height: 212px;
-  left: 278px;
-  top: 364px;
-}
-
-.stack {
-  position: absolute;
-  width: 326px;
-  height: 236px;
-  left: 634px;
-  top: 364px;
 }
 
 @media screen and (max-width: 769px) {

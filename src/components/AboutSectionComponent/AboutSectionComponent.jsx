@@ -6,22 +6,19 @@ import TextComponent from "../TextComponent/TextComponent";
 import "./AboutSectionComponent.css";
 
 function AboutSectionComponent({
-  section_style,
-  section_name_style,
   section_name,
-  section_details_style,
   section_details,
   imgSrc,
 }) {
   const themeContext = useContext(ThemeContext);
 
   return (
-    <div className={section_style + " " + themeContext}>
+    <div className={"section " + themeContext}>
       <img src={imgSrc} />
-      <TextComponent className={section_name_style}>
+      <TextComponent>
         {section_name}
       </TextComponent>
-      <TextComponent className={section_details_style}>
+      <TextComponent>
         {section_details}
       </TextComponent>
     </div>

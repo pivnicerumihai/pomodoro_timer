@@ -2,11 +2,8 @@ button {
   text-transform: uppercase;
 }
 .navbar_button {
-  position: absolute;
   width: 131px;
   height: 58px;
-  left: 1233px;
-  top: 19px;
   border-radius: 4.55046px;
   font-weight: 600;
   font-size: 24px;
@@ -36,14 +33,14 @@ button {
   line-height: 30px;
   letter-spacing: 0.015em;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .start_button {
-  position: absolute;
-  width: 496px;
+  display: block;
+  margin: 20px auto;
+  width: 80%;
   height: 82px;
-  left: 688px;
-  top: 394px;
   border-radius: 8px;
   background: linear-gradient(
     91.84deg,
@@ -56,11 +53,10 @@ button {
 }
 
 .reset_button {
-  position: absolute;
-  width: 496px;
+  width: 80%;
+  display: block;
+  margin: 0 auto;
   height: 82px;
-  left: 688px;
-  top: 516px;
   border-radius: 8px;
   border-width: 2px;
   border-style: solid;
@@ -80,35 +76,8 @@ button {
 }
 
 @media screen and (max-width: 769px) {
-  .navbar_button {
-    position: absolute;
-    width: 65px;
-    height: 28px;
-    left: 490px;
-    top: 30px;
-    font-weight: 600;
-    font-size: 12px;
-  }
-
-  .start_button,
-  .reset_button {
-    font-size: 20px;
-  }
-
-  .start_button {
-    position: absolute;
-    width: 335px;
-    height: 62px;
-    left: 20px;
-    top: 559px;
-    border-radius: 8px;
-  }
-
-  .reset_button {
-    position: absolute;
-    width: 335px;
-    height: 62px;
-    left: 20px;
-    top: 646px;
+  .timer_content,
+  .timer_settings {
+    width: 100%!important;
   }
 }

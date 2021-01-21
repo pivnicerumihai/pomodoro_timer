@@ -1,7 +1,10 @@
 .navbar {
-  width: 1440px;
+  width: 100%;
   box-shadow: 0px 4px 6px rgba(31, 29, 43, 0.05);
   height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .navbar.light {
